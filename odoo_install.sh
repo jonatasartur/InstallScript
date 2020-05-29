@@ -78,12 +78,14 @@ echo -e "\n--- Installing Python 3 + pip3 --"
 sudo apt-get install git python3 python3-pip build-essential wget python3-dev python3-venv python3-wheel libxslt-dev libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libpng12-0 libjpeg-dev gdebi -y
 
 echo -e "\n---- Install python packages/requirements ----"
+#sudo passwd $OE_USER
 #su $OE_USER
 #cd $OE_HOME
+#sudo chmod -R 777 $OE_HOME
 #sudo python3 -m venv ${OE_USER}-venv
 #source $OE_HOME/${OE_USER}-venv/bin/activate
 
-#pip install whell
+#pip install wheel
 #pip install -r https://github.com/odoo/odoo/raw/${OE_VERSION}/requirements.txt
 
 #deactivate
